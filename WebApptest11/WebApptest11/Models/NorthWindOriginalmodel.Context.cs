@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApptest11
+namespace WebApptest11.Models
 {
     using System;
     using System.Data.Entity;

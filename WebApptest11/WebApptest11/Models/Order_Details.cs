@@ -7,15 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApptest11
+namespace WebApptest11.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Kayttajat
+    public partial class Order_Details
     {
-        public int KayttajaID { get; set; }
-        public string Kayttajatunnus { get; set; }
-        public string Salasana { get; set; }
+        public int OrderID { get; set; }
+        public int ProductID { get; set; }
+        public decimal UnitPrice { get; set; }
+        public short Quantity { get; set; }
+        public float Discount { get; set; }
+    
+        public virtual Orders Orders { get; set; }
+        public virtual Products Products { get; set; }
     }
 }

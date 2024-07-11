@@ -7,25 +7,26 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApptest11
+namespace WebApptest11.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Territories
+    public partial class Region
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Territories()
+        public Region()
         {
-            this.Employees = new HashSet<Employees>();
+            this.Shippers = new HashSet<Shippers>();
+            this.Territories = new HashSet<Territories>();
         }
     
-        public string TerritoryID { get; set; }
-        public string TerritoryDescription { get; set; }
         public int RegionID { get; set; }
+        public string RegionDescription { get; set; }
     
-        public virtual Region Region { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Employees> Employees { get; set; }
+        public virtual ICollection<Shippers> Shippers { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Territories> Territories { get; set; }
     }
 }

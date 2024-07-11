@@ -128,63 +128,63 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Categories.cs">
+    <Compile Include="Models\Categories.cs">
       <DependentUpon>NorthWindOriginalmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="CustomerDemographics.cs">
+    <Compile Include="Models\CustomerDemographics.cs">
       <DependentUpon>NorthWindOriginalmodel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Customers.cs">
+    <Compile Include="Models\Customers.cs">
       <DependentUpon>NorthWindOriginalmodel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Employees.cs">
+    <Compile Include="Models\Employees.cs">
       <DependentUpon>NorthWindOriginalmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Kayttajat.cs">
+    <Compile Include="Models\Kayttajat.cs">
       <DependentUpon>NorthWindOriginalmodel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Logins.cs">
+    <Compile Include="Models\Logins.cs">
       <DependentUpon>NorthWindOriginalmodel.tt</DependentUpon>
     </Compile>
-    <Compile Include="NorthWindOriginalmodel.Context.cs">
+    <Compile Include="Models\NorthWindOriginalmodel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>NorthWindOriginalmodel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="NorthWindOriginalmodel.cs">
+    <Compile Include="Models\NorthWindOriginalmodel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>NorthWindOriginalmodel.tt</DependentUpon>
     </Compile>
-    <Compile Include="NorthWindOriginalmodel.Designer.cs">
+    <Compile Include="Models\NorthWindOriginalmodel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>NorthWindOriginalmodel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Orders.cs">
+    <Compile Include="Models\Orders.cs">
       <DependentUpon>NorthWindOriginalmodel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Order_Details.cs">
+    <Compile Include="Models\Order_Details.cs">
       <DependentUpon>NorthWindOriginalmodel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Products.cs">
+    <Compile Include="Models\Products.cs">
       <DependentUpon>NorthWindOriginalmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Region.cs">
+    <Compile Include="Models\Region.cs">
       <DependentUpon>NorthWindOriginalmodel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Shippers.cs">
+    <Compile Include="Models\Shippers.cs">
       <DependentUpon>NorthWindOriginalmodel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Suppliers.cs">
+    <Compile Include="Models\Suppliers.cs">
       <DependentUpon>NorthWindOriginalmodel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Territories.cs">
+    <Compile Include="Models\Territories.cs">
       <DependentUpon>NorthWindOriginalmodel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -208,12 +208,12 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="NorthWindOriginalmodel.Context.tt">
+    <Content Include="Models\NorthWindOriginalmodel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>NorthWindOriginalmodel.Context.cs</LastGenOutput>
       <DependentUpon>NorthWindOriginalmodel.edmx</DependentUpon>
     </Content>
-    <Content Include="NorthWindOriginalmodel.tt">
+    <Content Include="Models\NorthWindOriginalmodel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>NorthWindOriginalmodel.edmx</DependentUpon>
       <LastGenOutput>NorthWindOriginalmodel.cs</LastGenOutput>
@@ -224,11 +224,11 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="NorthWindOriginalmodel.edmx">
+    <EntityDeploy Include="Models\NorthWindOriginalmodel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>NorthWindOriginalmodel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="NorthWindOriginalmodel.edmx.diagram">
+    <Content Include="Models\NorthWindOriginalmodel.edmx.diagram">
       <DependentUpon>NorthWindOriginalmodel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -259,7 +259,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
